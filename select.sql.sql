@@ -10,7 +10,6 @@ USE AdventureWorks2019
 GO
 SELECT BusinessEntityID, JobTitle, BirthDate, Gender
 FROM HumanResources.Employee
---WHERE NationalIDNumber>500000000 AND NationalIDNumber<1000000000
 WHERE NationalIDNumber BETWEEN 500000000 AND 1000000000
 GO
 
