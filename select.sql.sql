@@ -17,7 +17,7 @@ USE AdventureWorks2019
 GO
 SELECT BusinessEntityID, JobTitle, BirthDate , Gender
 FROM HumanResources.Employee
-WHERE YEAR(BirthDate) IN ('1980','1990')
+WHERE YEAR(BirthDate) IN (1980,1990)
 GO
 
 USE AdventureWorks2019
@@ -32,5 +32,5 @@ GO
 SELECT BusinessEntityID, ShiftID
 FROM HumanResources.EmployeeDepartmentHistory
 GROUP BY BusinessEntityID, ShiftID
-HAVING COUNT(BusinessEntityID)>=2 AND COUNT(ShiftID)>=2
+HAVING COUNT(BusinessEntityID)>=2
 GO
